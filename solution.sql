@@ -1,1 +1,10 @@
+CREATE DATABASE DINESH19:
+USE DINESH19:
 
+CREATE OR REPLACE TRIGGER Employee_Insert_Trigger
+AFTER INSERT ON Employee
+FOR EACH ROW
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Employee record inserted successfully');
+END;
+/
